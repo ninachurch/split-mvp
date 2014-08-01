@@ -1,8 +1,8 @@
 require 'rake'
 require 'rspec/core/rake_task'
 require_relative 'db/config'
-require_relative 'lib/students_importer'
-require_relative 'lib/teachers_importer'
+require_relative 'lib/UsersImporter'
+
 
 
 desc "create the database"
@@ -48,8 +48,8 @@ task "db:console" do
 end
 
 desc 'opens up the current working SQlite3 database'
-task "db:sql" do
-  exec "sqlite3 ./db/ar-students.sqlite3"
+task "db" do
+  exec "sqlite3 ./db/split-mvp.sqlite3"
 end
 
 desc "Run the specs"
