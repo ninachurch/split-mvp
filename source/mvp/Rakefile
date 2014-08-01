@@ -4,7 +4,6 @@ require_relative 'db/config'
 require_relative 'lib/UsersImporter'
 
 
-
 desc "create the database"
 task "db:create" do
   touch 'db/split-mvp.sqlite3'
