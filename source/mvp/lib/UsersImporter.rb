@@ -1,10 +1,3 @@
-
-
-# class UsersImporter
-#   def import
-#   end
-# end
-
 require_relative '../app/models/user'
 
 module UsersImporter
