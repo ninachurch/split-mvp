@@ -2,6 +2,8 @@ require 'rubygems'
 require 'sinatra'
 require '../db/config.rb'
 require_relative './models/user'
+require_relative './models/workout'
+
 
 # get '/hello' do
 #     user = User.first
